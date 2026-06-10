@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/123-mobile-detailing/pro-tips/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&samely=PP3sy94&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+
+<!-- SEO Meta Tags -->
+<title>Pro Tips | 123 Mobile Detailing</title>
+<meta name="description" content="Expert automotive care tips from the professionals at 123 Mobile Detailing." />
+<meta property="og:title" content="Pro Tips | 123 Mobile Detailing" />
+<meta property="og:description" content="Expert automotive care tips from the professionals at 123 Mobile Detailing." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pro Tips | 123 Mobile Detailing" />
+<meta name="twitter:description" content="Expert automotive care tips from the professionals at 123 Mobile Detailing." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mq807qo6-i600i";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4678');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='xVj92JA6W';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans antialiased bg-dark-950 text-gray-200 overflow-x-hidden">
+
+<header class="fixed w-full top-0 z-50">
+  <div id="navbar-inner" class="w-��ձ������̵��������؁������ȁ��́��������ѥ�䵉��ݕ����ѕ�̵���ѕȁ��ɑ�ȵ����ɑ�ȵ���������(����񄁡ɕ�􈼈�񥵜��Ɍ�����輽�ɽݑ������������н������̼���5������х��������͵��������ѥ�ѡɕ������������􉠴�����頴���ܵ��Ѽ����(�����؁�����􉡥�������陱�������������ѕ�̵���ѕȈ�(������񄁡ɕ�􈽅���Ј������􉹅ص�ѕ��ѕ�е�́���е͕�����������ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е������Q������ɥ������(������񄁡ɕ��͕�٥��̈������􉹅ص�ѕ��ѕ�е�́���е͕�����������ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е������M��٥�����(������񄁡ɕ���ɼ�ѥ�̈������􉹅ص�ѕ��ѕ�е�́���е͕�����������ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е������Aɼ�Q�����(������񄁡ɕ�􈽩��ɹ���������􉹅ص�ѕ��ѕ�е�́���е͕�����������ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е������)��ɹ����(������񄁡ɕ�􈽍��х�Ј������􉹅ص�ѕ��ѕ�е�́���е͕�����������ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е��������х����(������񄁡ɕ��ɕ͕�ٔ�������􉉜�������Ʌ����Ёѕ�е��ɬ�������؁��ȸԁɽչ�����ձ��ѕ�е�́���е���������ɍ�͔��Ʌ������ݥ���Ј�I�͕�ٔ��(����𽹅��(�������ѽ����􉵽������Ѹ�������􉵐顥�����ѕ�е��������ٜ������􉠴؁ܴ؈�����􉹽����٥��	��������Ѐ�Ј���ɽ�����ɕ�����Ȉ����Ѡ���ɽ�����������ɽչ�����ɽ������������ɽչ�����ɽ���ݥ�Ѡ�ĸԈ���4Ѐ٠��4Ѐ�ɠ��4Ѐ���؈����ٜ����ѽ��(��𽑥��(���؁��􉵽��������Ԉ������􉵐顥��������������ͽ��є�ܵ�ձ�����д��ѽ���ձ���дā��Ј�(�����؁�����􉝱��̵������ɽչ�����ᰁ��Ё��ԁ��������്����������ā��ɑ�ȁ��ɑ�ȵ���������(������񄁡ɕ�􈼈������􉉱������Ё��́ѕ�еʹ�����ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е�����ɽչ��������!�����(������񄁡ɕ�􈽅���Ј������􉉱������Ё��́ѕ�еʹ�����ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е�����ɽչ��������Q������ɥ������(������񄁡ɕ��͕�٥��̈������􉉱������Ё��́ѕ�еʹ�����ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е�����ɽչ��������M��٥�����(������񄁡ɕ���ɼ�ѥ�̈������􉉱������Ё��́ѕ�еʹ�����ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е�����ɽչ��������Aɼ�Q�����(������񄁡ɕ�􈽩��ɹ���������􉉱������Ё��́ѕ�еʹ�����ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е�����ɽչ��������)��ɹ����(������񄁡ɕ�􈽍��х�Ј������􉉱������Ё��́ѕ�еʹ�����ɍ�͔��Ʌ������ݥ���Ёѕ�е�Ʌ�������ٕ��ѕ�е�����ɽչ����������х����(������񄁡ɕ��ɕ͕�ٔ�������􉉱������Ё��́�дȁѕ�еʹ����е���������ɍ�͔��Ʌ������ݥ���Ё�����������ѕ�е�����ɽչ�������ѕ�е���ѕȁ��ɑ�ȁ��ɑ�ȵ���������I�͕�ٔ������ѵ�����(����𽑥��(��𽑥��(𽡕�����((񵅥���������д�؁����д�Ё����Ё��Ё���ܴ�ᰁ�൅�Ѽ��(���؁������ѕ�е���ѕȁ������ɕٕ����(����������������ѕ�е��������е͕��������Ʌ������l��͕�t�����ɍ�͔�ѕ�е�́���Ё������������ɝ���٥��������(�����ā�����􉙽�е͕ɥ��ѕ�д�ᰁ���ѕ�д�ᰁѕ�еݡ�є����؈�5���х������A�ə��ѥ�����(�������������ѕ�е�Ʌ��������ܴ�ᰁ�൅�Ѽ����е����Ј�����Ё�ɽѽ���́Ѽ��ɕ͕�ٔ���ȁٕ������́�ɥ�ѥ��������ѥ������ݕ����ɽ���ͥ�������х������������ѵ���̸���(��𽑥��(���؁������ɥ���ɥ�����̴ā���ɥ�����̴ȁ���ɥ�����̴́�������(�����؁�����􉝱��̵����������ɽչ�����ᰁ��ɑ�ȁ��ɑ�ȵ��ɬ�������ٕ�鉽ɑ�ȵ���������Ʌ�ͥѥ���������Ʌѥ�������ɕٕ����ɽ����(�������؁������ܴ�ȁ���ȁ�����ɬ�����ɽչ�����ձ��������ѕ�̵���ѕȁ���ѥ�䵍��ѕȁ���؁ѕ�е�������ɑ�ȁ��ɑ�ȵ��ɬ������ɽ�����ٕ�鉽ɑ�ȵ���������Ʌ�ͥѥ��������̈���ٜ�������ܴԁ��Ԉ�����􉹽������ɽ�����ɕ�����Ȉ�٥��	��������Ѐ�Ј����Ѡ���ɽ�����������ɽչ�����ɽ������������ɽչ�����ɽ���ݥ�Ѡ�ĸԈ���4�̀��X�0Ѐ14h7v7l9-11h-7z"/></svg></div>
+      <h4 class="font-serif text-xl text-white mb-3">Act Fast on Etchings</h4>
+      <p class="text-sm text-gray-400 font-light leading-relaxed">Bird droppings and bug splatter are highly acidic. They can etch into clear coat in hours under direct sun. Keep a premium quick detailer and microfiber in your trunk for immediate removal.</p>
+    </div>
+    <div class="glass-panel p-8 rounded-2xl border border-dark-800 hover:border-gold/30 transition-all duration-300 reveal group" style="transition-delay:0.1s">
+      <div class="w-12 h-12 bg-dark-900 rounded-full flex items-center justify-center mb-6 text-gold border border-dark-700 group-hover:border-gold/50 transition-colors"><svg class="{-䁠�Ԉ�����􉹽������ɽ�����ɕ�����Ȉ�٥��	��������Ѐ�Ј����Ѡ���ɽ�����������ɽչ�����ɽ������������ɽչ�����ɽ���ݥ�Ѡ�ĸԈ���4�Ȁ��ɴ��Ѡ��Ŵ�ظ����Ѡ�̸��ٌĸ�Ѐ��ȸ��ȴĸ��܀ĸ��ȴ�0�̸��Ȁь���ܴĸ��̴ȸ��дĸ��̴̸��Ѐ�0̸�Ѐ�ጴ��܀ĸ��̸��Ȁ̀ĸ��Ȁ�舼���ٜ�𽑥��(�������Ё�����􉙽�е͕ɥ��ѕ�еᰁѕ�еݡ�є����̈�ٽ����ѽ��ѕ��]�͡�����(���������������ѕ�еʹ�ѕ�е�Ʌ��������е����Ё��������ɕ��ᕐ��Q������ɕ�ͥٔ�������������͡�́�Ё��ѽ��ѕ��݅͡�́��Ё�����ͅ������Ȱ����Ս�������ɼ�͍Ʌэ��́�����ݥɰ���ɭ̸�=�Ё�፱�ٕͥ�䁙�ȁѽՍ����́݅͡�́�ȁ�ɽ���ͥ��������������ѕ���������(����𽑥��(�����؁�����􉝱��̵����������ɽչ�����ᰁ��ɑ�ȁ��ɑ�ȵ��ɬ�������ٕ�鉽ɑ�ȵ���������Ʌ�ͥѥ���������Ʌѥ�������ɕٕ����ɽ������屔��Ʌ�ͥѥ������������̈�(�������؁������ܴ�ȁ���ȁ�����ɬ�����ɽչ�����ձ��������ѕ�̵���ѕȁ���ѥ�䵍��ѕȁ���؁ѕ�е�������ɑ�ȁ��ɑ�ȵ��ɬ������ɽ�����ٕ�鉽ɑ�ȵ���������Ʌ�ͥѥ��������̈���ٜ�������췒��R"f����&���R"7G&��S�&7W'&V�D6���""f�Wt&���##B#B#��F�7G&��R�Ɩ�V6�'&�V�B"7G&��R�Ɩ�V�����'&�V�B"7G&��R�v�GF��#�R"C�$�2VBBBF��RR��Ӓ㓓�R�"R�"Ӓ�s�"��dB�B�2W�"����7fs���F�c�ƃB6�73�&f��B�6W&�bFW�B׆�FW�B�v��FR�"�2#�Gv��'V6�WB7�7FV����C��6�73�'FW�B�6�FW�B�w&��Cf��B�Ɩv�B�VF��r�&V��VB#�bv6���rB���R�W6R��R'V6�WBf�"6��6��WF����B6W&FR'V6�WBf�"&��6��r��W"v6�֗GB�F��2&WfV�G2G&vv��r'&6�fRF�'B'F�6�W2&6�7&�72��W"FVƖ6FR��B������F�c��F�b6�73�&v�72��V�ӂ&�V�FVB�'��&�&FW"&�&FW"�F&�Ӄ��fW#�&�&FW"�v��B�3G&�6�F������GW&F����3&WfV�w&�W"7G��S�'G&�6�F����FV����2#��F�b6�73�'r�"��"&r�F&�ӓ&�V�FVB�gV��f�W��FV�2�6V�FW"�W7F�g��6V�FW"�"�bFW�B�v��B&�&FW"&�&FW"�F&��sw&�Wֆ�fW#�&�&FW"�v��B�SG&�6�F����6���'2#��7fr6�73�'��HMH��[H��ۙH�����OH��\��[���܈��Y]Л�H�����]����K[[�X�\H���[������K[[�Z��[�H���[������K]�YH�K�H�H�LL���HSL�L�[NSMˍNˍNˍMˍML��ˍMˍMMˍNM���ˍMLˍML�L�ˍMLˍM�Ϗ�ݙϏ�]����\��H��۝\�\�Y�^^^]�]HX�Lȏ�\��[�H�YO����\��H�^\�H^Yܘ^KM�۝[Y�XY[��\�[^Y��U�^��\�HYܘY\��X\���][��Y\�[�\�[܈X]\�X[�ݙ\�[YK��ݙ\�Y܈�YY\��[���[X]X�[H^[��HY�Hو[�H��][��܈�^�����]���]��\��H��\��\[�[N��[�YL��ܙ\��ܙ\�Y\��Nݙ\���ܙ\�Y�����[��][ۋX[\�][ۋL��]�X[ܛ�\��[OH��[��][ۋY[^N���ȏ��]��\��H��LL�LL���Y\��NL��[�YY�[�^][\�X�[�\��\�Y�KX�[�\�X�M�^Y���ܙ\��ܙ\�Y\��M�ܛ�\Zݙ\���ܙ\�Y���L�[��][ۋX��ܜȏ�ݙ��\��H��y h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div>
+      <h4 class="font-serif text-xl text-white mb-3">Condition Leather Regularly</h4>
+      <p class="text-sm text-gray-400 font-light leading-relaxed">Quality leather needs hydration every 2-3 months to prevent cracking. Use a dedicated pH-balanced conditioner -- never household cleaners.</p>
+    </div>
+    <div class="glass-panel p-8 rounded-2xl border border-dark-800 hover:border-gold/30 transition-all duration-300 reveal group" style="transition-delay:0.3s">
+      <div class="w-12 h-12 bg-dark-900 rounded-full flex items-center justify-center mb-6 text-gold border border-dark-700 group-hover:border-gold/50 transition-colors"><svg class=��y h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg></div>
+      <h4 class="font-serif text-xl text-white mb-3">Maintain Your Ceramic</h4>
+      <p class="text-sm text-gray-400 font-light leading-relaxed">Even the finest ceramic coatings require periodic maintenance with a SiO2 boost spray to reactivate hydrophobic properties. Schedule a maintenance wash every 3-4 months.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-dark-950 border-t border-dark-800 py-12 px-4">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <div><img src="https://krowdimg.b-cdn.net/clients/123MobileDetailing/123mobiledeatilthree.png" class="h-20 md:h-24 w-auto mb-4 mx-auto md:mx-0"><p class="text-gray-500 text-sm">Exclusive Mobile Automotive Care.</p></div>
+    <p class="text-xs text-gray-600 uppercase tracking-widest">&copy; 2026 123 Mobile Detailing.</p>
+  </div>
+</footer>
+<script src="https://paymegpt.com/widget.js" data-widget="62860399" async></script>
+
+  <script src="script.js"></script>
+</body></html>
