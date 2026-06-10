@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/123-mobile-detailing/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+
+<!-- SEO Meta Tags -->
+<title>Premium Auto Care | 123 Mobile Detailing</title>
+<meta name="description" content="Exclusive mobile automotive detailing services — studio-grade care delivered to your estate or office." />
+<meta property="og:title" content="Premium Auto Care | 123 Mobile Detailing" />
+<meta property="og:description" content="Exclusive mobile automotive detailing services — studio-grade care delivered to your estate or office." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Premium Auto Care | 123 Mobile Detailing" />
+<meta name="twitter:description" content="Exclusive mobile automotive detailing services — studio-grade care delivered to your estate or office." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mq7zndhu-cx2jt";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4675');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='nuqLTEbyzu';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans antialiased bg-dark-950 text-gray-200 overflow-x-hidden">
+
+<header class="fixed w-full top-0 z-50" id="navbar">
+  <div id="navbar-inner" class="w-full glass-panel px-6 lg:px-12 py-3 flex justify-between items-center border-b border-gold/20 transition-all duration-300">
+    <a href="/123-mobile-detailing/" class="flex-shrink-0">
+      <img src="https://krowdimg.b-cdn.net/clients/123MobileDetailing/123mobiledeatilthree.png" alt="123 Mobile Detailing" class="h-20 md:h-28 w-auto drop-shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+    </a>
+    <nav class="hidden md:flex space-x-8 items-center">
+      <a href="/123-mobile-detailing/about" class="nav-item text-xs font-semibold uppercase tracking-widest text-gray-400 hover:text-gold transition-colors">The Experience</a>
+      <a href="/123-mobile-detailing/services" class="nav-item text-xs font-semibold uppercase tracking-widest text-gray-400 hover:text-gold transition-colors">Services</a>
+      <a href="/123-mobile-detailing/pro-tips" class="nav-item text-xs font-semibold uppercase tracking-widest text-gray-400 hover:text-gold transition-colors">Pro Tips</a>
+      <a href="/123-mobile-detailing/journal" class="nav-item text-xs font-semibold uppercase tracking-widest text-gray-400 hover:text-gold transition-colors">Journal</a>
+      <a href="/123-mobile-detailing/contact" class="nav-item text-xs font-semibold uppercase tracking-widest text-gray-400 hover:text-gold transition-colors">Contact</a>
+      <a href="/123-mobile-detailing/reserve" class="bg-gold-gradient text-dark-950 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all">Reserve</a>
+    </nav>
+    <button id="mobile-btn" class="md:hidden text-gold">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden absolute w-full left-0 top-full mt-1 px-4">
+    <div class="glass-panel rounded-2xl px-4 py-5 flex flex-col space-y-1 border border-gold/20">
+      <a href="/123-mobile-detailing/" class="block px-4 py-3 text-sm font-medium uppercase tracking-widest text-gray-300 hover:text-gold rounded-lg">Home</a>
+      <a href="/123-mobile-detailing/about" class="block px-4 py-3 text-sm font-medium uppercase tracking-widest text-gray-300 hover:text-gold rounded-lg">The Experience</a>
+      <a href="/123-mobile-detailing/services" class="block px-4 py-3 text-sm font-medium uppercase tracking-widest text-gray-300 hover:text-gold rounded-lg">Services</a>
+      <a href="/123-mobile-detailing/pro-tips" class="block px-4 py-3 text-sm font-medium uppercase tracking-widest text-gray-300 hover:text-gold rounded-lg">Pro Tips</a>
+      <a href="/123-mobile-detailing/journal" class="block px-4 py-3 text-sm font-medium uppercase tracking-widest text-gray-300 hover:text-gold rounded-lg">Journal</a>
+      <a href="/123-mobile-detailing/contact" class="block px-4 py-3 text-sm font-medium uppercase tracking-widest text-gray-300 hover:text-gold rounded-lg">Contact</a>
+      <a href="/123-mobile-detailing/reserve" class="block px-4 py-3 mt-2 text-sm font-bold uppercase tracking-widest bg-gold/10 text-gold hover:bg-gold hover:text-dark-900 rounded-lg text-center border border-gold/30">Reserve Appointment</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center scale-105"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-dark-950/90 via-dark-950/50 to-dark-950 z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-dark-950/95 via-dark-950/70 to-transparent z-10"></div>
+      <div class="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-gold/20 rounded-full blur-[120px] animate-pulse z-10 pointer-events-none"></div>
+    </div>
+    <div class="relative z-20 w-full max-w-7xl mx-auto px-6 mt-24">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-gold/40 bg-dark-900/60 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(212,175,55,0.15)]">
+          <span class="relative fleh h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-gold"></span></span>
+          <span class="text-xs text-gold uppercase tracking-[0.2em] font-bold">VIP Mobile Concierge</span>
+        </div>
+        <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1]">
+          <span class="block text-white mb-2">Automotive</span>
+          <span class="block text-gradient-gold">Perfection.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-10 font-light max-w-xl leading-relaxed border-l-2 border-gold/50 pl-6">
+          Elevate your vehicle's presence. We deliver unparalleled, studio-grade auto detailing directly to your estate or office.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-5">
+          <a href="/123-mobile-detailing/reserve" class="bg-gold-gradient text-dark-950 px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:shadow-[0_10px_40px_rgba(212,175,55,0.5)] transition-all flex items-center justify-center gap-3 group">
+            Reserve Now <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="/123-mobile-detailing/services" class="glass-panel px-10 py-4 rounded-full font-semibold uppercase tracking-widest text-white hover:border-gold/50 transition-all flex items-center justify-center">View Collections</a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
+      <div class="w-6 h-10 border-2 border-gold/40 rounded-full flex justify-center p-1 bg-dark-950/50">
+        <div class="w-1.5 h-2 bg-gold rounded-full animate-bounce mt-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Cards -->
+  <section class="py-32 px-4 bg-dark-950">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-20 reveal">
+        <span class="text-gold font-semibold tracking-[0.3em] uppercase text-xs mb-4 block">Signature Offerings</span>
+        <h2 class="font-serif text-4xl md:text-5xl text-white mb-6">Curated For Perfection</h2>
+        <div class="w-12 h-1 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <!-- Card 1 -->
+        <a href="/123-mobile-detailing/services" class="glass-panel rounded-2xl p-8 hover:border-gold/40 hover:shadow-[0_10px_40px_rgba(212,175,55,0.1)] hover:-translate-y-1 transition-all duration-500 group reveal flex flex-col" style="transition-delay:0.1s">
+          <div class="w-14 h-14 rounded-full bg-dark-800 border border-gold/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+            <svg class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-gold transition-colors">The Executive</h3>
+          <p class="text-gray-400 text-sm mb-8 leading-relaxed flex-grow">Deep steam cleaning, premium leather conditioning, and comprehensive sanitization to restore your cabin's showroom feel.</p>
+          <div class="flex items-center justify-between border-t border-dark-700 pt-6 mt-auto">
+            <span class="text-white font-serif text-xl">$195+</span>
+            <span class="text-gold text-xs font-bold uppercase tracking-widest flex items-center gap-2">Explore <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+          </div>
+        </a>
+        <!-- Card 2 Featured -->
+        <a href="/123-mobile-detailing/services" class="glass-panel rounded-2xl p-8 hover:border-gold/40 hover:shadow-[0_10px_40px_rgba(212,175,55,0.1)] hover:-translate-y-1 transition-all duration-500 group reveal flex flex-col relative overflow-hidden md:-translate-y-4 border-gold/30" style="transition-delay:0.2s">
+          <div class="absolute top-0 right-0 bg-gold text-dark-950 text-[10px] font-bold px-4 py-1.5 uppercase tracking-widest rounded-bl-lg">Most Popular</div>
+          <div class="w-14 h-14 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+            <svg class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-gold transition-colors">The Concierge</h3>
+          <p class="text-gray-400 text-sm mb-8 leading-relaxed flex-grow">Our ultimate bumper-to-bumper transformation. Full interior restoration paired with complete exterior paint enhancement.</p>
+          <div class="flex items-center justify-between border-t border-dark-700 pt-6 mt-auto">
+            <span class="text-white font-serif text-xl">$425+</span>
+            <span class="text-gold text-xs font-bold uppercase tracking-widest flex items-center gap-2">Explore <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+          </div>
+        </a>
+        <!-- Card 3 -->
+        <a href="/123-mobile-detailing/services" class="glass-panel rounded-2xl p-8 hover:border-gold/40 hover:shadow-[0_10px_40px_rgba(212,175,55,0.1)] hover:-translate-y-1 transition-all duration-500 group reveal flex flex-col" style="transition-delay:0.3s">
+          <div class="w-14 h-14 rounded-full bg-dark-800 border border-gold/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+            <svg class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-gold transition-colors">Ceramic Shield</h3>
+          <p class="text-gray-400 text-sm mb-8 leading-relaxed flex-grow">Multi-year paint protection utilizing aerospace-grade nano-ceramic coatings. Ultimate gloss and absolute defense against elements.</p>
+          <div class="flex items-center justify-between border-t border-dark-700 pt-6 mt-auto">
+            <span class="text-white font-serif text-xl">Custom Quote</span>
+            <span class="text-gold text-xs font-bold uppercase tracking-widest flex items-center gap-2">Explore <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <section class="py-20 px-4 bg-dark-900/50 border-y border-dark-800">
+    <div class="max-w-5xl mx-auto grid grid-cols-3 gap-8 text-center reveal">
+      <div><span class="block text-4xl md:text-5xl font-serif text-white mb-2">10<span class="text-gold">+</span></span><span class="text-xs uppercase tracking-widest text-gray-500 font-semibold">Years Experience</span></div>
+      <div><span class="block text-4xl md:text-5xl font-serif text-white mb-2">5k<span class="text-gold">+</span></span><span class="text-xs uppercase tracking-widest text-gray-500 font-semibold">Vehicles Detailed</span></div>
+      <div><span class="block text-4xl md:text-5xl font-serif text-white mb-2">100<span class="text-gold">%</span></span><span class="text-xs uppercase tracking-widest text-gray-500 font-semibold">Mobile Service</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-dark-950 border-t border-dark-800 py-12 px-4 mt-auto">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="text-center md:text-left">
+      <img src="https://krowdimg.b-cdn.net/clients/123MobileDetailing/123mobiledeatilthree.png" alt="123 Mobile Detailing" class="h-20 md:h-24 w-auto mb-4 mx-auto md:mx-0 drop-shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+      <p class="text-gray-500 text-sm font-light">Exclusive Mobile Automotive Care.<br>Serving clients who demand absolute perfection.</p>
+    </div>
+    <div class="flex flex-col items-center md:items-end gap-4">
+      <div class="flex space-x-5 text-gray-500">
+        <a href="#" class="hover:text-gold transition-colors"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/></svg></a>
+        <a href="#" class="hover:text-gold transition-colors"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg></a>
+      </div>
+      <p class="text-xs text-gray-600 uppercase tracking-widest text-center md:text-right">&copy; 2026 123 Mobile Detailing.<br>Fully Licensed. Insured.</p>
+    </div>
+  </div>
+</footer>
+<script src="https://paymegpt.com/widget.js" data-widget="62860399" async></script>
+
+  <script src="script.js"></script>
+</body></html>
